@@ -12,7 +12,6 @@ class DatosEspecificos: AppCompatActivity()  {
     private lateinit var binding: DatosEspecificosBinding
 
     companion object {
-
         const val TAG_TEXT = "TAG_TEXT"
 
         fun launch(context:Context, text: String) {

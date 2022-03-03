@@ -24,9 +24,7 @@ class PlanetasAdapter(var listaPlanetas: MutableList<Planet>):RecyclerView.Adapt
         context=parent.context
         return PlanetasViewHolder(binding)
 
-
     }
-
 
 
     override fun onBindViewHolder(holder: PlanetasViewHolder, position: Int) {
@@ -34,7 +32,6 @@ class PlanetasAdapter(var listaPlanetas: MutableList<Planet>):RecyclerView.Adapt
         holder.itemBinding.textoPlaneta.text=listaPlanetas.get(position).name
 
         holder.itemBinding.textoPlaneta.setOnClickListener{
-            var a=holder.itemBinding.root.context
             DatosEspecificos.launch(
                 holder.itemBinding.layoutPlanetas.context,
                 listaPlanetas.get(position).toString()
